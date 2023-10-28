@@ -1,0 +1,2 @@
+# smit
+JavaScript Chapter assignment  
