@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // pop, you can remove the last element of an array.
+        // push, you can add one or more elements to the end of an array
+        // shift, method to remove an element from the beginning of an array.
+        //To add one or more elements to the beginning of an array, use the unshift
+        // splice method to insert one or more elements anywhere in an array, 
+        //  ---------------------------------Arrays chap#15
+
+        // var city0='canada';
+        // var city1='america';
+        // var city2='dubai';
+        // var  city3='china';
+        // var  city4='japan';
+        // var  city5='pakistan';
+        // var  city6='toranto';
+
+        // alert('welcome to ' + city4);
+
+        // var mixedArray=[1,'anabia','now is',true]
+        // console.log(mixedArray);
+
+      // creating arrays
+
+      // arr1=new Array('anabia','ruhama','arqam');
+      // arr2=['hey','hi','hello'];
+
+     // arr3=new Array[10];
+      // arr4=[10];
+
+  //     document.write( " arr1:",arr1,"<br>","<br>","<br>" );
+  //     document.write(" arr2: ",arr2);
+  //  //   document.write(arr3);
+      // document.write(arr4);
+
+      // arr=["string",5,true];
+      // document.write(typeof  arr[0]);
+      // document.write(typeof arr[1]);
+      // document.write(typeof arr[2]);
+
+
+      
+//       const arr = ["hi there"];
+// arr[0] = "new value";
+// console.log(arr[0]);
+// arr = ["nope, now you are overwriting the array"];
+
+// console.log(cars[-1])
+      
+    //  cars=["a","b","c"];
+    //  cars[3]="kia";
+    //  cars[-1]="mehran";
+    //  document.write(cars[3] , "<br>");
+    //  document.write(cars[-1]);
+
+  //     colors = ["black", "orange", "pink"]
+  //     console.log("🚀 ~ file: index.html:66 ~ colors:", colors)
+  // booleans = [true, false, false, true];
+  // console.log("🚀 ~ file: index.html:68 ~ booleans:", booleans)
+  // emptyArray=[];
+  // console.log("🚀 ~ file: index.html:70 ~ emptyArray:", emptyArray)
+      
+  //  var   lastElement=colors[colors.length-2];
+  //  console.log("🚀 ~ file: index.html:73 ~ lastElement:", lastElement)
+   
+
+//   shopping=['milk','bread','apples'];
+//   shopping.splice(1,1,'bananas');
+//  shopping.splice(1,1,'banana');
+//  console.log(shopping);
+
+// favoriteFruits = ["grapefruit", "orange", "lemon"];
+// favoriteFruits.push("tangerine");
+// let LengthOfFfavFruits=favoriteFruits.push('mango');
+// console.log(favoriteFruits);
+
+
+// let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
+// arrOfShapes.splice(2, 0, "square", "trapezoid");
+// console.log(arrOfShapes);
+
+//   let arr1=['a','b','c','d','e','f','g','h','i','j'];
+//  let arr2=[4,5,6,];
+ // let arr3=arr1+arr2.concat(arr2);
+  //console.log(arr3);
+
+  //let arr4=arr3.concat(7,8,9,);
+  // arr1.pop();//delete last element
+  // console.log(arr1);
+  // arr1.shift();//delete 1 element
+  // console.log(arr1);
+  // arr1.splice(1,6);
+  // console.log(arr1);
+
+//   let arr3=arr2.concat(7,8,9);
+//  // arr3.pop();
+//   //  arr3.shift(); 
+//   arr1.splice(1,2,'anabia');
+//   delete arr1[3];
+//   document.write(arr1);
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
+
+        
+        // -------------Arrays:Adding and removing elements  chapter 16
+        /*
+                var pets = [];
+                pets[0] = 'cat';
+                pets[1] = 'dog';
+                pets[2] = 'fly';
+                pets[3] = 'bug';
+                pets[4] = 'ox';
+        
+                //  pets.pop(4);
+                //  pets.push('anabia','ruhama');
+                //pets.shift();
+                // pets.unshift('aaa','bbb');
+                // pets.splice(0,3,'zzz','yyy');
+                //  pets.splice(4,4,'aaa','bbb');
+                //   pets.splice(2,2);
+                //var noPets=pets.splice(2,4);
+                //   pets.splice(3,0,'yyy');
+        
+        
+                console.log(pets);
+        
+                -----------------------18 for loops
+      */
+        //  var cleanistCities=['pakistan','UAE','lahore','islamabad'];
+        //  var cityToCheck=[];
+        //  if(cityToCheck===cleanistCities[0])
+        //  {
+        //     console.log('it is one of the cleanist city');
+        //  }
+        //  else if(cityToCheck===cleanistCities[1])
+        //  {
+        //     console.log('it is one of the cleanist city');
+
+        //  }
+        //  else if(cityToCheck===cleanistCities[2])
+        //  {
+        //     console.log('it is one of the cleanist city');
+
+        //  }
+        //  else if(cityToCheck===cleanistCities[3])
+        //  {
+        //     console.log('it is one of the cleanist city');
+
+        //  }
+        //  else if(cityToCheck===cleanistCities[4])
+        //  {
+        //     console.log('it is one of the cleanist city');
+
+        //  }
+        //  else
+        //  {
+        //     console.log('city is not clean');
+        //  }
+
+        // for(var a=0;a<=4;a++)
+        // {
+        //     if(cityToCheck===cleanistCities)
+        //     {
+        //         alert('this is clean city');
+
+        //     }
+        // }
+
+
+
+
+        //  -------------------------chap 20 for loops nested
+        /*
+        var fn=['anabia','ruhama','maham','asma'];
+        var ln=['mansoor','jehan','ali','hamza'];
+        var fullname=[];
+        for(let a=0;a<fn.length;a++)
+        {
+            for(let b=0;b<ln.length;b++)
+            {
+                fullname.push([fn[a] + " " +ln[b]]);
+            }
+        }
+        console.log(fullname);
+        
+
+         for(let i=1; i <=10 ;i++)
+         {
+            document.write("i = " , "   " +  " ", i +  ", " );
+         }
+
+----------------------------for loops ------------------
+
+ var cities=['karachi','islamabad','lahore'];
+ var checkcity=prompt("check city");
+ for(let i =0; i <=cities.length;i++)
+ {
+    console.log("i = " , i , cities[i]);
+ }
+ if(checkcity ===  cities[i])
+ {
+    console.log("city match");
+ }
+  
+
+  var cities=["dubai", "ny", "chicago", "LA", "mexico", "karachi"];
+  var CheckCity=prompt('enter city');
+  for(let i = 0; i <= cities.length ; i++ )
+  {
+    console.log( i,cities[i]);
+    if(CheckCity === cities[i])
+    {
+        document.write(" hi ", i, cities[i]);
+    }
+  }
+      
+
+
+        var evenno = [];
+        for (let i = 2; i <= 50; i = i + 2) 
+        {
+            evenno.push(i)
+        }
+        console.log(evenno);
+
+ 
+
+  var evenno=[];
+  for(let i=2; i<100;i=i+2)
+  {
+      evenno.push(i);
+    }
+    
+    console.log("🚀 ~ file: index.html:155 ~ evenno:", evenno)
+        
+       var cities=[];
+        var city=prompt('enter clean city');
+       for(let i=0 ; i< 5 ; i++)
+       {
+        cities.push(i);
+       }
+       console.log(city);
+     
+
+       var student=['anabia','ayesha','ruhama','alia'];
+       var progress=['begginer','intermediate','advance'];
+
+       for(let i=0;i<student.length;i++)
+       {
+        for(let a=0;a<progress.length;a++)
+        {
+            console.log(student[i] , "   "  , progress[a]);
+        }
+       }
+
+
+
+       --------------------------------if else--------------------------------
+        
+
+         var num=prompt('enter any  number');
+         if(num == 10)
+         {
+            console.log('i am in if block');
+         }       
+         else
+         {
+            console.log('i am in else block ');
+         }
+         
+
+          var evenOdd=prompt("give any no to check it is even no or odd no")
+          if(evenOdd % 2 ==0)
+          {
+            console.log("num is even");
+          }
+          else{
+            console.log("num is odd");
+          }
+
+         
+          // write a program to check age > or eq to 18
+
+            var age=prompt("enter your age");
+           if(age >18 )
+           {
+            console.log("u are eligible");
+           }
+           else{
+            console.log("u are  not eligible");
+           }
+            
+
+             var age=prompt("enter your age");
+             var gender=prompt("enter your gender");
+
+             if(age > 16 && gender.toLowerCase() === "female")
+             {
+                console.log("yes")
+             }
+             else{
+                 console.log("no")
+
+             }
+             
+
+              var flower=prompt("enter your flower","Rose");
+              if(flower!="Rose")
+              {
+                console.log("i accept your flowers");
+              }
+              else{
+                console.log("i accept not your flowers");
+              }
+               
+            var age=+prompt("enter your age");
+               var num=10;
+               var num=11;
+               var num=5;
+
+               if(age >=10)
+               {
+                    console.log("allowed");
+               }
+               else if(age === 9)
+               {
+                console.log("waiting...");
+
+               }
+               else{
+                console.log("not allowed");
+
+               }
+
+               var searchArray=["anabia","arqam","sayeem","ruhama"];
+              var enterName=prompt("enter name and find ruhama");
+              for(let i=0;i<searchArray;i++)
+              {
+                if(searchArray[i] === " ruhama"){
+                  console.log("got it")
+                }
+              }
+               
+
+//-----------------------------------------------else if
+  var age=prompt("enter your age")
+  if(age <= 18)
+  {
+    document.write("u are young");
+  }               
+  else if (age >=20)
+  {
+    document.write("buy a phone");
+  }
+  else
+  {
+    document.write("bhago !!");
+  }
+
+
+  var guess=prompt("enter number less than 5")
+  if(guess == 5)
+  {
+   document.write("correct");
+  }
+  else{
+    if(guess<5)
+    {
+
+      document.write("incorrect");
+    }
+
+  }
+  *
+  
+
+  var guess = +prompt('enter any num to guess');
+if(guess === '5') {
+  console.log('u won')
+} else {
+  if (guess < 5) {
+    console.log('sorry ur num was > than our guessed')
+  }
+}
+
+
+// var city='islamabad';
+// if(city.toLowerCase() !=="karachi")
+// {
+//   if(city.toLocaleLowerCase() ==="islamabad")
+//   {
+//     console.log("capital")
+//   }
+//   else{
+//     console.log("not capital");
+//   }
+
+// }
+
+
+// if(city.toLocaleLowerCase() !== 'karachi' && city.toLowerCase() ==='islamabad')
+// {
+//   console.log("capital");
+// }
+// else{
+//   console.log("not capital");
+
+// }
+
+/
+/
+/
+         
+        
+         var ticketPrice;
+         var age=prompt("enter your age");
+         if(age<3)
+         {
+        document.write("ticket price : 100")
+         }
+         else if(age > 3 && age <=12)
+         {
+          document.write("ticket price : 200")
+
+         }
+         else if(age > 13 && age <=20)
+         {
+          document.write("ticket price : 300")
+
+         }
+         else 
+         {
+          document.write("ticket price : 400")
+
+         }
+        
+
+         var bool=true;
+         var truefalse=prompt("give true and false");
+         if(truefalse == bool)
+         {
+          console.log("i am in if block");
+         }
+         else{
+          console.log("i am in else block");
+         }
+ */
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
