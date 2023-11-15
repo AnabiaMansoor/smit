@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="datetime"></p>
+    <script>
+        //  1.	Create a block of code that you can use several times. 
+
+        // function hi(name)
+        // {
+        //     document.write(`hello kesi ho ${name}`);
+        // }
+        // hi("beautiful<br>");
+        // hi("naughty<br>");
+        // hi("fairy tale<br>");
+
+        //   2.	Write a function that displays current date & time in your browser.
+
+
+        //    function DisplayDateTime()
+        //    {
+        //         var DisplayDateTime=document.getElementById("datetime");
+        //         var CurrentDateTime=new Date();
+        //         DisplayDateTime.textContent="Current Date and Time" + CurrentDateTime.toLocaleString();
+
+        //    }
+        //    DisplayDateTime();
+
+        //  3.	Write a function that takes first & last name and then it greets the user using
+        //          his full name.
+
+
+        //     function TakeNames(fname,lname)
+        //     {
+        //         return fname + lname;
+        //     }
+
+        //    var result= TakeNames("anabia", " mansoor");
+        //    document.write(result);
+
+        //4.	Write a function that adds two numbers (input by user) and returns the sum of two
+        //numbers.
+
+        // function SumOfNum()
+        // {
+        // var num1=parseInt(prompt("enter 1 num"));
+        // var num2 =parseInt(prompt("enter 2 num"));
+        // var sum = num1+ num2;
+        // return num1+num2;
+        // var result=SumOfNum(num1+num2);
+        //     document.write(result);
+        // }
+        // SumOfNum("2","3");
+
+        //         function addNumbers() {
+        //     const number1 = parseFloat(prompt("Enter the first number:"));
+        //     const number2 = parseFloat(prompt("Enter the second number:"));
+
+        //     if (!isNaN(number1) && !isNaN(number2)) {
+        //         const sum = number1 + number2;
+        //         return sum;
+        //     } else {
+        //         return "Invalid input. Please enter valid numbers.";
+        //     }
+        // }
+
+        // const result = addNumbers();
+
+        // if (typeof result === 'number') {
+        //     alert("The sum is: " + result);
+        // } else {
+        //     alert(result);
+
+        // }
+        //     function AddNumbers()
+        //     {
+        //         var num1=parseFloat(prompt("enter 1 num"));
+        //         var num2=parseFloat(prompt("enter 2 num"));
+
+        //         if(!isNaN(num1)  && !isNaN(num2))
+        //         {
+        //             var sum=num1+num2;
+        //             return sum;
+        //         }   
+        //         else 
+        //         {
+        //             alert("invalid");
+        //         }
+        //     }
+        //   var result=  AddNumbers();
+        //   if(typeof result === 'number')
+        //   {
+        //     alert("the sum is : " + result);
+        //   }
+        //   else{
+        //     alert(result);
+        //   }
+
+
+        //6 Write a function that squares its argument.
+
+        //    function SquareNumbers(number)
+        //    {
+        //        var userInput=parseFloat(prompt("enter a number"));
+
+
+        //     var multiply = number * number;
+        //     return multiply
+        //    }
+        //    var result= SquareNumbers(5);
+        //    console.log(result);
+
+        //    function SquareNumbers(number)
+
+        //    {
+        //     return number * number;
+        //    }
+
+        //    var userInput=prompt("entr num");//2
+        //    if(userInput !="0")//2 != 0
+        //    {
+        //     var result= SquareNumbers(userInput);
+        //     alert("the multiply is : " + result)
+
+        //    }
+        //    else 
+        //    {
+        //     alert(result);
+        //    }
+        //7.	 Write a function that computes factorial of a number.
+
+        // function factorial(num)
+        // {
+        //     if(num < 0)
+        //     return -1;
+
+        //     else if(num == 0)
+        //     return 1;
+        // else {
+        //     return (num * factorial (num -1 ));
+        // }
+
+        // }
+        // factorial(7);
+        //   Write a function that takes three arguments num1, num2 & operator & compute the desired operation.
+        // Return and show the desired result in your browser.
+
+        // function Calculator(num1, num2, operator) {
+        //     switch (operator) {
+        //         case "+":
+        //             console.log(num1 + num2);
+
+        //         case "-":
+        //             console.log(num1 + num2);
+
+        //         case "*":
+        //             console.log(num1 + num2);
+
+        //         case "/":
+        //             if (num2 !== 0) {
+        //                 return num1 / num2;
+        //             }
+        //             else {
+        //                 return "division by zero is not allowed";
+        //             }
+        //         default:
+        //             return "invalid"
+        //     }
+
+        // }
+        // //  var result= Calculator();
+        // var num1 = parseFloat(prompt("Enter the first number:"));
+        // var num2 = parseFloat(prompt("Enter the second number:"));
+        // var operator = prompt("Enter the operator (+, -, *, /):");
+
+        // var result = Calculator(num1, num2, operator);
+        // document.write("Result: " + result);
+
+
+
+        // function calculate(num1, num2, operator) {
+        //     switch (operator) {
+        //         case '+':
+        //             return num1 + num2;
+        //         case '-':
+        //             return num1 - num2;
+        //         case '*':
+        //             return num1 * num2;
+        //         case '/':
+        //             if (num2 !== 0) {
+        //                 return num1 / num2;
+        //             } else {
+        //                 return "Error: Division by zero is not allowed.";
+        //             }
+        //         default:
+        //             return "Error: Invalid operator";
+        //     }
+        // }
+        // 8.	Write a function that take start and end number as inputs & display counting in your browser.
+
+        // // Example usage:
+        // var num1 = parseFloat(prompt("Enter the first number:"));
+        // var num2 = parseFloat(prompt("Enter the second number:"));
+        // var operator = prompt("Enter the operator (+, -, *, /):");
+
+        // var result = calculate(num1, num2, operator);
+        // document.write("Result: " + result);
+
+        //     function Counting(num1,num2,operator)
+        //     {
+        //         switch(operator)
+        //         {
+        //             case "+":
+        //               return num1 + num2;
+        //               default:
+        //                 document.write("invalid");
+        //         }
+
+
+        //     }
+        // var num1=parseFloat(prompt("enter 1 num"));
+        // var num2=parseFloat(prompt("ente4r 2 num"));
+        // var operator =prompt("add numbers (+)")
+        // var result=Counting(num1,num2,operator);
+        // document.write("the counting is : " + result);   
+
+        // function displayNumber(start,end)
+        // {
+        //     if(start > end)
+        //     {
+        //         document.write("Error: Start number should be less than or equal to the end number.");
+        //         return ;
+        //     }
+        //     for(let i=start;i<=end;i++)
+        //     {
+        //         document.write(i + "<br>");
+        //     }
+        // }
+        // var num1=parseFloat(prompt("enter 1 num"));
+        //  var num2=parseFloat(prompt("enter 2 num"));
+        //  displayNumber(num1,num2);
+
+        // 10.	Write a function that writes variable length arguments list in your browser.
+
+        //    function argumentsToBrowser()
+        //    {
+        //     for(let i=0;i<arguments.length;i++)
+        //     {
+        //         document.write(arguments[i] + "<br>")
+        //     }
+        //    }
+        //    argumentsToBrowser("the first argument " ,3,true,[1,2,6]);
+
+
+
+        //11.	Write a function that accepts any number of arguments & find largest of the number
+
+        // ********    function findLargest() {
+        //     if (arguments.length === 0) {
+        //         return null;  // Return null if no arguments are provided
+        //     }
+
+        //     let largest = arguments[0];
+        //     for (let i = 1; i < arguments.length; i++) {
+        //         if (arguments[i] > largest) {
+        //             largest = arguments[i];
+        //         }
+        //     }
+
+        //     return largest;
+        // }
+
+        // // Example usage:
+        // let result = findLargest(5, 8, 2, 10, 3);
+        // console.log("The largest number is:", result);
+
+
+        // function getMaxNum(num1,num2,num3)
+        // {
+        //     var numbers=Math.max(num1,num2,num3);
+        //     return numbers;
+        // }
+        // alert(getMaxNum(2,3,8));
+
+        // function SortingArray()
+        // {
+        //     let num=[3,2,1,5,6,8,9].sort((a,b)=>a-b);
+        //     return num;
+        // }
+
+        // document.write(SortingArray());
+
+
+
+        // function sortUserInput() {
+        //     // Step 1: Get User Input
+        //     let userInput = prompt("Enter numbers separated by commas:");
+
+        //     // Step 2: Store User Input in an Array
+        //     let numbers = userInput.split(",").map(Number);
+
+        //     // Step 3: Sort the Array
+        //     function compareNumbers(a, b) {
+        //         return a - b; // This sorts the numbers in ascending order. For descending order, use b - a.
+        //     }
+
+        //     numbers.sort(compareNumbers);
+
+        //     // Step 4: Display Sorted Output
+        //     console.log("Sorted Numbers: " + numbers.join(", "));
+        // }
+
+        // // Call the function to execute the sorting logic
+        // sortUserInput();
+
+
+        // **********14.	Write a function that takes numbers array, sums its elements & returns the sum.
+        //  function sumArrayElements(numbers) {
+        //     // Check if the input is an array
+        //     if (!Array.isArray(numbers)) {
+        //         return "Input is not an array.";
+        //     }
+
+        //     // Use the reduce function to calculate the sum
+        //     let sum = numbers.reduce(function (accumulator, currentValue) {
+        //         return accumulator + currentValue;
+        //     }, 0);
+
+        //     return sum;
+        // }
+
+        // // Example usage:
+        // let numbersArray = [1, 2, 3, 4, 5];
+        // let result = sumArrayElements(numbersArray);
+        // console.log("Sum of array elements:", result);
+
+        // function PowerNO()
+        // {
+        //     var base=2;
+        //     var power=3;
+        //     return Math.pow(base,power);
+        // }
+
+        // console.log(PowerNO(Math.pow(2,3)));
+
+        // function diceRoll(){
+
+        //     return Math.floor(Math.random()*6)+1;
+
+        // }
+        // var result= diceRoll();
+        // document.write("the dice number is :" , result);
+
+        // function ResverseNumber()
+        // {
+        //     let num=-5432100
+        //     num.toString();
+        //     //'-5432100'
+        //     num.split('');
+        //     // num = [ '-', '5', '4', '3', '2', '1', '0', '0' ]
+        //     num.reverse();
+        //     // num = [ '0', '0', '1', '2', '3', '4', '5', '-' ]
+        //     num.join();
+        //     // num = '0012345-'
+        //    parseFloat(num);
+        //    // num = 12345
+        //    num=Math.sign(-5432100);
+        //    //num -12345
+
+
+        // }
+
+        //     function reversedNum(num) {
+        //         return (
+        //             parseFloat(
+        //                 num
+        //                     .toString()
+        //                     .split('')
+        //                     .reverse()
+        //                     .join('')
+        //             ) * Math.sign(num)
+        //         )
+        //     }
+        //    var result =reversedNum(-5432100);
+        //    document.write(result);
+
+        //18.	Write a JavaScript function that checks whether a passed string is palindrome or not?  
+        //A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam.
+
+
+        // function isPalindrome(str) {
+        //     const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+        //     const reversedStr = cleanedStr.split('').reverse().join('');
+        //     return cleanedStr === reversedStr;
+        // }
+        // let testString = "A man, a plan, a canal, Panama!";
+        // if (isPalindrome(testString)) {
+        //     console.log(`"${testString}" is a palindrome.`);
+        // } else {
+        //     console.log(`"${testString}" is not a palindrome.`);
+        // }
+
+        // 21.	Write a JavaScript function that accepts a string as a parameter and find the 
+        //     longest word within the string. 
+        //     EXAMPLE STRING: 'Web Development Tutorial' 
+        //     EXPECTED OUTPUT: 'Development'
+
+        // function longestString(str)
+        // {
+        //     str=str.match(/[a-zA-Z0-9]+/gi);
+        //     let largest="";
+
+        //     for(let i=0;i<str.length;i++)
+        //     {
+        //         if(str[i].length>largest.length)
+        //         {
+        //             largest=str[i];
+        //         }
+        //     }
+        // return largest;
+        // }
+        // document.write(longestString("hi i am anabia , a junior developer"));
+
+
+        // 22.	Write a JavaScript function that accepts a string as a parameter and counts the number of
+        // vowels within the string. 
+
+        // EXAMPLE STRING : 'The quick brown fox' 
+        // EXPECTED OUTPUT : 5
+
+        // function CountVowel(str){
+        //     var count =str.match(/[aeiou]/gi).length;//match find the number of the strings
+        //     return count;
+        // }
+        // var vowel=prompt("enter a string");
+        // var result=CountVowel(vowel);
+        // document.write("the number of vowels are"  + " "    , result);
+
+
+        //             23.	Write a JavaScript function which accepts an argument and returns the type. 
+        // Note : There are six possible values that typeof returns: object, boolean, function, number, string,
+        // and undefined.
+
+        // function checkType() {
+        //     return typeof argument;
+        // }
+
+        //   26      Forgot how old you are? Calculate it!
+        // •	Write a function named calculateAge that:
+        // o	takes 2 arguments: birth year, current year.
+        // o	calculates the 2 possible ages based on those years.
+        // o	outputs the result to the screen like so: "You are either NN or NN"
+        // •	Call the function three times with different sets of values.
+        // •	Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
+
+        // function CalculateAge(Birthyear,CurrentYear)
+        // {
+        //     let age1=CurrentYear-Birthyear; 
+        //     let age2=age1-1;
+
+        //     document.write(`your age is ${age1} <br> ${age2}`);
+
+
+        // }
+        // var CurrentYear=new Date().getFullYear();
+
+        // CalculateAge(1999,CurrentYear,);
+        // CalculateAge(2000,CurrentYear);
+        // CalculateAge(2001,CurrentYear);
+
+
+        //             Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
+        // •	Write a function named calculateSupply that:
+        // o	takes 2 arguments: age, amount per day.
+        // o	calculates the amount consumed for rest of the life (based on a constant max age).
+        // o	outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
+        // •	Call that function three times, passing in different values each time.
+        // •	Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+        //             function calculateSupply(age, amountPerDay) {
+        //     const maxAge = 90; // Maximum age considered
+        //     const yearsRemaining = maxAge - age;
+        //     const amountNeeded = Math.round(yearsRemaining * 365 * amountPerDay);
+        //     console.log(`You will need ${amountNeeded} to last you`)
+
+        // Create 2 functions that calculate properties of a circle, using the definitions here.
+        // Create a function called calcCircumference:
+        // •	Pass the radius to the function.
+        // •	Calculate the circumference based on the radius, and output "The circumference is NN".
+        // Create a function called calcArea:
+        // •	Pass the radius to the function.
+        // •	Calculate the area based on the radius, and output "The area is NN".
+
+
+
+
+        // function calcCircumference(radius) {
+        //     const circumference = 2 * Math.PI * radius;
+        //     console.log(`The circumference is ${circumference.toFixed(2)}`);
+        // }
+
+        // function calcArea(radius) {
+        //     const area = Math.PI * radius ** 2;
+        //     console.log(`The area is ${area.toFixed(2)}`);
+        // }
+
+
+        // calcCircumference(5); 
+
+        // Execute & monitor the output of following JS program:
+        // var param = function inner() {
+        //     return typeof inner;
+        // }
+        // alert(param());
+        // var param = function inner() {
+        //     return typeof inner;
+        // }
+        // alert(param());
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
